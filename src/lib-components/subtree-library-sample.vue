@@ -32,7 +32,7 @@ export default /*#__PURE__*/defineComponent({
       this.message.amount = amount;
     },
     decrement(arg) {
-      const amount = (typeof arg !== 'number') ? 1 : arg;
+      const amount = (typeof arg !== 'number') ? 2 : arg;
       this.counter -= amount;
       this.message.action = 'decremented by';
       this.message.amount = amount;
@@ -53,7 +53,7 @@ export default /*#__PURE__*/defineComponent({
       Click +2
     </button>
     <button @click="decrement">
-      Click -1
+      Click -2
     </button>
     <button @click="increment(5)">
       Click +5
