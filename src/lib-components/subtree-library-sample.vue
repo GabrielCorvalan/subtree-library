@@ -26,7 +26,7 @@ export default /*#__PURE__*/defineComponent({
   },
   methods: {
     increment(arg) {
-      const amount = (typeof arg !== 'number') ? 1 : arg;
+      const amount = (typeof arg !== 'number') ? 2 : arg;
       this.counter += amount;
       this.message.action = 'incremented by';
       this.message.amount = amount;
@@ -50,7 +50,7 @@ export default /*#__PURE__*/defineComponent({
   <div class="subtree-library-sample">
     <p>The counter was {{ changedBy }} to <b>{{ counter }}</b>.</p>
     <button @click="increment">
-      Click +1
+      Click +2
     </button>
     <button @click="decrement">
       Click -1
